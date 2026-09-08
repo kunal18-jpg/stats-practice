@@ -57,6 +57,7 @@ hist(marks,
      ylab = "Frequency",
      col =c("red", "blue", "green", "yellow", "purple"),
      breaks = 6)
+
 #Histogram(to automatically create colours)
 marks <- c(45,67,23,89,90,12,34,56,78,90,23,45)
 h <- hist(marks, plot = FALSE)
@@ -76,22 +77,20 @@ hist(marks,
      col = "pink",
      border = "red")
  
-marks <- c(45,67,23,89,90,12,34,56,78,90,23,45)
-hist(marks,
-     freq = TRUE,
-     ylab = "Frequency")
 #Line Chart
 years <- c(2019,2020,2021,2022,2023)
 sales <- c(100,120,90,150,180)
 plot(years, sales, 
      type = "l", col = "blue", 
      main = "Sales Trend", xlab = "Year", ylab = "Sales")
+
 # Points and a line 
 years <- c(2019,2020,2021,2022,2023)
 sales <- c(100,120,90,150,180)
 plot(years, sales, 
      type = "o", 
      main = "Sales Trend", xlab = "Year", ylab = "Sales")
+
 # multiple coloured lines
 day <- c(1, 2, 3, 4, 5)
 classA <- c(20, 25, 18, 30, 28)
@@ -105,6 +104,7 @@ plot(day, classA,
 lines(day, classB,
       type = "o",
       col = "blue")
+
 #TO identify lines 
 day <- c(1, 2, 3, 4, 5)
 classA <- c(20, 25, 18, 30, 28)
@@ -173,7 +173,8 @@ boxplot(marks,
         col = "skyblue",
         main = "Distribution of Marks",
         ylab = "Marks")
-#different colours in a box plot
+
+#Different colours in a box plot
 classA <- c(45, 50, 55, 60, 65)
 classB <- c(50, 55, 60, 70, 75)
 classC <- c(40, 48, 52, 58, 62)
